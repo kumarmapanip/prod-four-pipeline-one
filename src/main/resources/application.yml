@@ -1,0 +1,11 @@
+server:
+  port: 9003  servlet:    context-path: /cc
+  
+spring:  application:    name: customer-service
+  jpa:    hibernate:      ddl-auto: update
+  datasource:    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/customer_master
+    username: postgres
+    password: badal@2020
+    
+eureka:  instance:    hostname: localhost
